@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*.nav-item{
+    padding-right: 0.5rem;
+    font-size:20px ;
+    text-transform: uppercase;
+}
+.nav-link{
+    color:crimson;
+    font-weight: 600;
+}
+.nav-item:hover{
+        background-color:darkgreen;
+        color: chartreuse;
+        box-shadow: 5px 10px 30px rgba(64,198,196,0.3);
+        transition:all ease-in 0.2 sec;
+    
+}*/
+
+a ul li{
+    color: green;
+    font-weight: 500;
+}
+a:hover{
+    background-color: indianred;
+    color:hotpink
+
+}
+.header-background{
+    position: static;
+    display: block;
+    overflow: visible;
+    top:0;
+    height: auto;
+    padding-top: 70px;
+    background-color: darkseagreen;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex-direction:column;
+    
+}
+.sticky-nav{
+    position: sticky;
+    position:-webkit-sticky;
+    top:0px;
+    padding:20px;
+    z-index:1;
+    -webkit-align-self:auto;
+    -ms-flex-item-align: auto;
+    align-self:auto;
+    -webkit-box-ordinal-group: 1;
+    -webkit-order:0;
+    -ms-flex-order: 0;
+    order: 0;
+    background-color: rgb(62, 78, 46);
+    
+}
+.navbar .navbar-brand a{
+    padding:1rem;
+    display:block;
+    text-decoration: none;
+    
+}
+.navbar-brand{
+    font-size:2.2rem;
+    color:black;
+
+}
+.navbar-toggler{
+    border:none;
+    padding:10px 6px;
+    outline: cadetblue;
+
+}
+.navbar-toggler span{
+ display:block;
+ width:22px;
+ height:2px;
+ border:1px;
+ background: crimson;
+}
+.navbar-toggler span + span{
+    margin-top: 4px;
+    width: 22px;
+    
+   }
+   .navbar-toggler span + span{
+    width: 22px;
+   }
+   .navbar-expand-lg .navbar-nav .nav-link{
+       padding:1.4rem 1rem;
+       font-size: 1.2rem;
+       position:relative;
+   }
+   .navbar-expand-lg .navbar-nav .nav-link{
+    color:darkorange
+}
+.model img{
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 10%;
+    height: 10%;
+    }
+
+.model{
+    animation-name: example;
+    margin-top: 20px;
+    background-color: darkblue;
+}    
+@keyframes example{
+   from{ background-color: rgb(40, 184, 71);}
+   to{background-color: cyan;}
+}
+.content{
+    animation-name:example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    background-color: darkblue;
+    text-align: center;
+    margin-bottom: 50px;
+    
+
+}
+
+
+h1.name{
+    animation-direction: normal;
+     display: block;
+     font-size: 2em;
+     color: white;
+    font-family: cursive;
+}
+.h5{
+    text-align: center;
+    line-height: 1.4;
+    display:block;
+    font-size:1em;
+    color:deeppink;
+}
+h1.section-title{
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+p.paragraph{
+    position: absolute;
+    color: tan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-overflow: ellipsis;
+    
+}
+/*.column-left{
+    
+    min-height: 300px;
+    background-image:url(icons/who.jpg);
+    background-position: 0px 0px, 100% 50%;
+    background-size: auto cover;
+    background-attachment: scroll scroll;
+    object-fit: cover;
+    -o-object-fit: cover;
+}
+
+.column-right .section-title{
+
+    background-color: green;
+}*/
+
+.column-left{
+
+    float:left;
+    width:50%;
+    margin-bottom: 50px;
+    background-color: hotpink;
+}
+.column-right{
+
+    white-space: normal;
+    float:right;
+    width:50%;
+    margin-bottom: 50px;
+    background-color: indigo;
+
+}
+.row:after{
+    content: "";
+    display:table;
+    clear:both;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+@media screen and(max-width:480px){
+    .column-left
+    .column-right{
+    float:none;
+    width:auto;
+    }
+}
+
+h1.secondary{
+    font-size: 30px;
+    color: lawngreen;
+    
+}
+p.sec{
+    font-size:20px ;
+    color:lightcoral;
+}
+p.last{
+    font-size: 20px;
+    color: lightcoral;
+    margin-bottom: 50px;
+}
+#about{
+    margin-bottom: 50px;
+}
+#education{
+    margin-top: 50px;
+}
+h1.projects{
+    font-size: 30px;
+    background-color: lightseagreen;
+    color:black;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
