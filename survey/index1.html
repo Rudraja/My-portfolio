@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <title>
+        Survey Form
+    </title>
+
+</head>
+
+<body>
+    <h1> Survey Form</h1>
+    <form id="form">
+        <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+
+            <input type="number" id="number-lable" min="1" max="100" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+
+
+            <select name="role" id="role">
+                <option disabled selected value> Role</option>
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Would you recommed FCC
+                to a freind?
+            </label>
+
+
+            <label for="recommed-1">
+                <input type="radio" id="recommed-1" name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio" id="recommed-2" name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio" id="recommed-3" name="recommed">Maybe</input>
+            </label>
+        </div>
+
+
+
+
+        <div class="form-control">
+            <label for="most-like" id="label-role">
+                What do you most like in FCC
+            </label>
+
+
+            <select name="mostlike" id="most-like">
+                <option disabled selected value> Choose </option>
+                <option value="Challenges">Challenges</option>
+                <option value="intern">Projects</option>
+                <option value="professional">
+                    Community
+                </option>
+                <option value="Opensource"> Open Source</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+
+        <div class="form-control">
+            <label>Things that should be improved in future
+                <small>(Check all that apply)</small>
+            </label>
+
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Front-end Projects</input></label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">Back-end Projects </input></label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">Data Visualization</input></label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Challenges</input></label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Open Source Community</input></label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">Gitter help Rooms </input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Videos</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">City Meetups</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Wiki</input></label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Forum</input></label>
+            <lablel for="inp-8">
+                <input type="checkbox" name="inp">Additional Courses</input>
+            </lablel>
+        </div>
+
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+
+
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
+                </textarea>
+        </div>
+
+
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+    <h2>For More information visit our website<a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+    </h2>
+    <h3>Created By:Rudraja Vansutre</h3>
+    </form>
+</body>
+
+</html>
