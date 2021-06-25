@@ -6,8 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="icons/rv.jpg" rel="icon">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -167,32 +169,109 @@
   <section id="contact">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-lg-6 contact-left">
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">
           <div class=" text-left-block">
             <div class="left-center-text">
               <div class="left-center-part">
                 <h2 class="contact-section">Get In Touch</h2>
-                <p class="paragraph">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col lg-12">
+                    <form id="contact-form" name="contact-form" method="POST" data-name="contact-form">
+                      <div class="row">
 
-                </p>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <input type="text" id="Name" class="form form-control" placeholder="Name" name="name"
+                              data-name="Name" required>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <input type="email" id="email" class="form form-control" placeholder="Email" name="Email"
+                              data-name="Email Address" required>
 
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <input type="text" id="company" class="form form-control" placeholder="Company name"
+                              name="company" data-name="Company">
+
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group">
+                            <input type="number" id="phone" class="form form-control" placeholder="Phone Number"
+                              name="phone" data-name="Phone Number" required>
+                          </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-6">
+                          <div class="form-group">
+                            <textarea id="text" class="form textarea form-control" placeholder="Your Message Here"
+                              name="message" data-name="Text " required>
+
+                          </textarea>
+                          </div>
+                          <span class="sub-text"> *Required</span>
+                        </div>
+                      </div>
+                      <button onclick="save()" type="submit" id="send" class="btn btn-color">
+                        end Message
+                      </button>
+
+                    </form>
+
+                  </div>
+
+
+                </div>
               </div>
-
-
             </div>
-            <div class="left" </div>
-            </div>
-
           </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-6 contact right">
+          <img src="icons/contact.jpg">
+        </div>
+      </div>
+    </div>
   </section>
+
+
+
+  </div>
+
+  </div>
+
+
+  </section>
+  <footer class="footer">
+    <h1 class="title"> Connect and say Hi!</h1>
+    <div class="icons">
+      <a href="https://github.com/Rudraja" target="_blank">
+        <i class="fa fa-github fa-4x"></i>
+      </a>
+      <a href="https://www.instagram.com/rudraja_/" target="_blank">
+        <i class="fa fa-instagram fa-4x"></i>
+    </div>
+  </footer>
+  <div>
+
+  </div>
 
 
 
 
   </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
+  <script src="new.js">
+  
+  </script>
+
 
 
 </body>
