@@ -1,32 +1,25 @@
-loadEvents();
- function loadEvents(){
-let sendButton = document.getElementById('send');
-let contact=document.getElementById('contact');
- }   
-
-function save(){
-    let name = document.getElementById('name');
-    let email = document.getElementById('email');
-    let company = document.getElementById('company');
-    let phone = document.getElementById('phone');
-    let text = document.getElementById('text');
-
-     
-    name = name.value;
-    localStorage.setItem('name', Json.stringify(name));
+function save(event) {
     
-    email = email.value;
-    localStorage.setItem('email', Json.stringify(email));
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const company = document.getElementById('company').value;
+    const phone = document.getElementById('phone').value;
+    const text = document.getElementById('text').value;
 
-    comapny = company.value;
-    localStorage.setItem('company', Json.stringify(company));
-
-    phone = phone.value;
-    localStorage.setItem('phone', Json.stringify(phone));
-
-    text = text.value;
-    localStorage.setItem('text',Json.stringify(text) );
+    const contactDetails = {
+        name,
+        email,
+        company,
+        phone,
+        text,
+    };
+    localStorage.setItem('contactDetails', JSON.stringify(contactDetails));
 }
+
+
+
+
    
 
     
